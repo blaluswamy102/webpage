@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <link rel="stylesheet" href="styles.css">
+   <script src="webpage.js"></script>
+
+    <title>Track my Train</title>
+</head>
+
+<body>
+    <section class="header">
+        <div class="head">
+            <div class="w-10">
+                <i class="fa fa-bars" onclick="details()" aria-hidden="true"></i>
+            </div>
+            <div class="w-90">
+                <h3>Where is my Train</h3>
+            </div>
+
+        </div>
+        <div class="w-100">
+            <button>EXPRESS</button>
+            <button>METRO</button>
+        </div>
+
+    </section>
+    <section class="sec">
+        <div class="section-1">
+            <div class="w-10">
+                <i class="fa-regular fa-circle" id="circular"></i>
+            </div>
+            <div class="w-20">
+                <h4>ATP</h4>
+            </div>
+            <div class="w-70">
+                <input type="text" placeholder="From Station" />
+            </div>
+            <div class="cancel">
+                <i class="fa fa-times" aria-hidden="true"></i>
+
+            </div>
+        </div>
+        <div class="middle">
+            <div class="ellipsis"> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></div>
+        </div>
+
+        <div class="section-1">
+            <div class="w-10">
+                <i class="fa-regular fa-circle" id="circular"></i>
+            </div>
+            <div class="w-20">
+                <h4>KSR</h4>
+            </div>
+            <div class="w-70">
+                <input type="text" placeholder="To Station" />
+
+            </div>
+            <div class="cancel">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="btn">
+            <button class="findbtn">Find trains</button>
+        </div>
+
+    </section>
+    <section>
+        <div class="section-2">
+            <div class="w-10">
+                <i class="fa fa-subway" aria-hidden="true"></i>
+
+            </div>
+            <div class="w-70">
+                <input type="text" placeholder="Train No./ Train Name" />
+
+            </div>
+
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+        </div>
+
+        <div class="section-2">
+            <div class="w-10">
+                <i class="fa fa-subway" aria-hidden="true"></i>
+
+
+            </div>
+            <div class="w-70">
+                <input type="text" placeholder="Station departure board" />
+
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+        </div>
+
+        <div class="search-h">
+            <h4>SEARCH HISTORY</h4>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <button class="pnr">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                PNR
+            </button>
+            <button class="pnr">
+                <i class="fa fa-ticket" aria-hidden="true"></i>
+                TICKETS
+            </button>
+        </div>
+    </footer>
+
+
+
+<section id="leftmenu">
+  
+        <div class="leftmenu-1 ">
+     <div class="w-20">
+      <img src="images/image.png" alt="">
+        <div class="cancel">
+    <i class="fa fa-times" onclick="closemenu()" id="cancel" aria-hidden="true"></i>
+
+    </div>
+     </div>
+        <h5>Last sync:<span id="date"></span></h5>
+
+   
+   <div class="leftmenu-2">
+     <div class="w-10">
+<i class="fa-regular fa-pen-to-square"></i>
+
+    </div>
+    <div class="w-90">
+        <h3>Update Timetable</h3>
+    </div>
+    
+   </div>
+    <div class="leftmenu-2">
+     <div class="w-10">
+<i class="fa-regular fa-pen-to-square"></i>
+
+    </div>
+    <div class="w-90">
+        <h3>Language</h3>
+    </div>
+    
+   </div>
+    <div class="leftmenu-2">
+     <div class="w-10">
+<i class="fa-regular fa-pen-to-square"></i>
+
+    </div>
+    <div class="w-90">
+        <h3>Change city</h3>
+    </div>
+    
+   </div>
+    <div class="leftmenu-2">
+     <div class="w-10">
+<i class="fa-regular fa-pen-to-square"></i>
+
+    </div>
+    <div class="w-90">
+        <h3>Clear Recent Searches</h3>
+    </div>
+    
+   </div>
+    <div class="leftmenu-2">
+     <div class="w-10">
+<i class="fa fa-cog" aria-hidden="true"></i>
+
+    </div>
+    <div class="w-90">
+        <h3>Settings</h3>
+    </div>
+    
+   </div>
+    <div class="leftmenu-2">
+     <div class="w-10">
+<i class="fa fa-bug" aria-hidden="true"></i>
+
+    </div>
+    <div class="w-90">
+        <h3>Share App</h3>
+    </div>
+    
+   </div>
+    <div class="leftmenu-2">
+     <div class="w-10">
+<i class="fa-regular fa-pen-to-square"></i>
+
+    </div>
+    <div class="w-90">
+        <h3>Rate Us</h3>
+    </div>
+    
+   </div>
+    <div class="leftmenu-2">
+     <div class="w-10">
+<i class="fa-regular fa-pen-to-square"></i>
+
+    </div>
+    <div class="w-90">
+        <h3>Report Issue</h3>
+    </div>
+    
+   </div>
+    </div>
+    
+    
+</section>
+
+
+    
+</body>
+
+</html>
